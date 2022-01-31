@@ -9,7 +9,7 @@ export default function Home() {
     return(
 
     <SafeAreaView style={GlobalStyle.AndroidSafeArea, {backgroundColor: "#eee", flex: 1}}>
-        <View>
+        <View style={{backgroundColor: "white", padding: 15}}>
           <HeaderTabs/>
         </View>  
     </SafeAreaView>
