@@ -6,21 +6,21 @@ import Categoria from "../components/Categoria";
 import GlobalStyle from "../components/GlobalStyle";
 import HeaderTabs from "../components/HeadersTabs";
 import SearchBar from "../components/SearchBar";
-import RestaurantItem from "../components/RestaurantItem";
+import CarshopItem from "../components/CarshopItem";
 
 
 
 export default function Home() {
     return(
 
-    <SafeAreaView style={GlobalStyle.AndroidSafeArea, {backgroundColor: "#eee", flex: 1}}>
+      <SafeAreaView style={GlobalStyle.AndroidSafeArea, {backgroundColor: "#eee", flex: 1}}>
         <View style={{backgroundColor: "white", padding: 15}}>
           <HeaderTabs />
           <SearchBar />
         </View>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Categoria />
-          <RestaurantItem />
+          <CarshopItem  />
         </ScrollView>  
     </SafeAreaView>
     )
