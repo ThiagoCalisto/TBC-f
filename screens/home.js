@@ -9,7 +9,7 @@ import SearchBar from "../components/SearchBar";
 import CarshopItem, { localServices } from "../components/CarshopItem";
 
 
-const YELP_API_KEY = "6_7lhu4MNlVqxpR8F2pKNxQ1f0dkbijHmykKA0u9aIEL34r0EX9HQi7X6wP8KnqyuOuJ9dgwrW8QxeDuk2QHpNdhQVlzcGz6GY181znbFQSi_A63xBVqoyXjA0dWYnYx";
+const YELP_API_KEY = "";
 
 
 
