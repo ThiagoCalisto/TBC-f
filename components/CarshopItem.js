@@ -3,6 +3,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import MaterialCommunityIcons from "react-native-vector-icons/Ionicons";
 import { clickProps } from "react-native-web/dist/cjs/modules/forwardedProps";
 import { parseComponentStack } from "react-native/Libraries/LogBox/Data/parseLogBoxLog";
+import { useEffect } from "react/cjs/react.production.min";
 
 export const localServices = [
    {
@@ -28,10 +29,10 @@ export const localServices = [
 
 
 
-export default function CarshopItem() {
+export default function CarshopItem(props) {
   return(
       <TouchableOpacity activeOpacity={1} style={{ marginBottom: 30}}>
-        {localServices.map((carShop, index) => (
+        {props.carshopData.map((carShop, index) => (
     <View key={index}
      style={{ marginTop: 10, padding: 15, backgroundColor: "white"}}>
         <CarshopImage image={carShop.image_url} />
